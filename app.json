@@ -1,0 +1,9 @@
+{
+  "name": "Hotto Motto Roulette",
+  "description": "ただのほっともっとのお弁当ルーレット",
+  "website": "https://hmroulette.herokuapp.com/",
+  "repository": "https://github.com/yymm/hmroulette",
+  "addons": [
+    "redistogo",
+  ]
+}
