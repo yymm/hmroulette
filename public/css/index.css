@@ -1,0 +1,10 @@
+#container {
+  text-align: center;
+}
+#roulette {
+  font-size: 2.5em;
+}
+button {
+  width: 250px;
+  height: 80px;
+}

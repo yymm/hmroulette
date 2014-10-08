@@ -1,9 +1,11 @@
 <script src="https://raw.githubusercontent.com/HubSpot/odometer/master/odometer.min.js"></script>
 <link href="css/index.css" type="text/css" rel="stylesheet"></script>
-<p id="roulette">Motto Motto Roulette</p>
-<button id="startbtn" onClick="this.disabled=true;clearTimeout();start_slot();">start</button>
-<button onClick="stop_slot();">stop</button>
-<% @menu.each_with_index do |m, i| %>
-<div class="menu" id="m<%= i %>" style='display: none;'><%= m %></div>
-<% end %>
+<div id="container">
+  <p id="roulette">Motto Motto Roulette</p>
+  <button id="startbtn" onClick="this.disabled=true;clearTimeout();start_slot();">start</button>
+  <button onClick="stop_slot();">stop</button>
+  <% @menu.each_with_index do |m, i| %>
+  <div class="menu" id="m<%= i %>" style='display: none;'><%= m %></div>
+  <% end %>
+</div>
 <script src="js/index.js"></script>

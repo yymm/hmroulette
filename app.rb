@@ -4,7 +4,12 @@ require 'redis'
 require 'sinatra'
 require 'sinatra/reloader'
 
-redis = Redis.new
+if ENV["REDISTOGO_URL"] != nil
+  uri = URI.parse(ENV["REDISTOGO_URL"])
+  redis = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
+else
+  redis = Redis.new
+end
 
 if redis.llen('homo') == 0 then
   doc = Nokogiri::HTML(open('http://www.hottomotto.com/menu_list/index/13'))
