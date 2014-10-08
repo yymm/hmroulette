@@ -1,10 +1,38 @@
-#container {
+@CHARSET "UTF-8";
+
+@font-face {}
+
+body {
+  background-color: #dffe;
   text-align: center;
 }
+
 #roulette {
-  font-size: 2.5em;
+  /* background-color: #ccf; */
+  padding: 15px;
+  border: #000 1px solid;
+  border-radius: 8px;
+  height: 5em;
+  text-align: center;
+  font-size: 25px;
 }
+
 button {
-  width: 250px;
-  height: 80px;
+  background-color: rgba(0,176,160, 0.8);
+  margin: 15px;
+  border: #fff 1px solid;
+  border-radius: 8px;
+  box-shadow:5px 5px #555;
+  width: 10em;
+  height: 3em;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
 }
+
+#startbtn {
+}
+
+#stopbtn {
+}
+
