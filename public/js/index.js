@@ -5,7 +5,7 @@ function start_slot() {
   var r = Math.floor(Math.random(1)*n);
   var mstr = menu[r].innerHTML;
   document.getElementById('roulette').innerHTML = mstr;
-  tid = setTimeout('start_slot()', 10);
+  tid = setTimeout('start_slot()', 50);
 }
 function stop_slot() {
   clearTimeout(tid);
