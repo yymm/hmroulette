@@ -4,6 +4,6 @@
   "website": "https://hmroulette.herokuapp.com/",
   "repository": "https://github.com/yymm/hmroulette",
   "addons": [
-    "redistogo",
+    "redistogo"
   ]
 }
